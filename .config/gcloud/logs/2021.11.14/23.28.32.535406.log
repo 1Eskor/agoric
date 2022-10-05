@@ -1,0 +1,9 @@
+2021-11-14 23:28:32,539 DEBUG    root            Loaded Command Group: [u'gcloud', u'config']
+2021-11-14 23:28:32,542 DEBUG    root            Loaded Command Group: [u'gcloud', u'config', u'virtualenv']
+2021-11-14 23:28:32,548 DEBUG    root            Loaded Command Group: [u'gcloud', u'config', u'config_helper']
+2021-11-14 23:28:32,640 DEBUG    root            Loaded Command Group: [u'gcloud', u'config', u'set']
+2021-11-14 23:28:32,643 DEBUG    root            Loaded Command Group: [u'gcloud', u'config', u'get_value']
+2021-11-14 23:28:32,646 DEBUG    root            Loaded Command Group: [u'gcloud', u'config', u'list']
+2021-11-14 23:28:32,650 DEBUG    root            Loaded Command Group: [u'gcloud', u'config', u'unset']
+2021-11-14 23:28:32,652 DEBUG    root            Loaded Command Group: [u'gcloud', u'config', u'configurations']
+2021-11-14 23:28:32,653 ERROR    root            (gcloud.config) Invalid choice: 'project'.

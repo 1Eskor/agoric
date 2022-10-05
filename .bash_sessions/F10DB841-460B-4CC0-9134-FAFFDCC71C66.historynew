@@ -1,0 +1,15 @@
+sudo pip install --upgrade pip
+python get-pip.py
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py 
+python3 get-pip.py
+/Users/zachstamegna/.bash_profile
+clear
+ls -al
+touch bash.profile
+touch .bash_profile
+ls -al
+open .bash_profile
+echo mnemonic 
+$echo mnemonic
+clear
+open .bash_profile

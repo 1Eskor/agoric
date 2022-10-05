@@ -1,0 +1,5 @@
+   259.4ms (setup:715): 2021-10-03 00:46:31
+   259.7ms (setup:716): /Users/zachstamegna/Library/Python/3.9/lib/python/site-packages/pipx/__main__.py ensurepath
+   259.7ms (setup:717): pipx version is 0.16.4
+   259.8ms (setup:718): Default python interpreter is '/usr/local/bin/python3'
+   417.7ms (cli:776): pipx finished.

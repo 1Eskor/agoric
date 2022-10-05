@@ -1,0 +1,8 @@
+2021-11-28 13:48:05,013 DEBUG    root            Loaded Command Group: [u'gcloud', u'config']
+2021-11-28 13:48:05,072 DEBUG    root            Loaded Command Group: [u'gcloud', u'config', u'set']
+2021-11-28 13:48:05,075 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "high-comfort-332206"]
+2021-11-28 13:48:05,076 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2021-11-28 13:48:05,166 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2021-11-28 13:48:05,347 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/high-comfort-332206?alt=json HTTP/1.1" 200 None
+2021-11-28 13:48:05,350 INFO     root            Display format: "default"

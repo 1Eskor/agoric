@@ -1,0 +1,27 @@
+2021-11-18 20:39:38,742 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute']
+2021-11-18 20:39:39,024 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'ssh']
+2021-11-18 20:39:39,028 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--project: "high-comfort-332206", --zone: "us-west4-b", [USER@]INSTANCE: "chainlink-kovan"]
+2021-11-18 20:39:39,324 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2021-11-18 20:39:39,621 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-11-18 20:39:39,894 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-11-18 20:39:39,905 DEBUG    root            OS Login Enabled: None
+Security Keys Enabled: False
+Username: zachstamegna
+SSH Security Key Support: None
+Environment: None
+Security Keys:
+
+
+2021-11-18 20:39:39,906 DEBUG    root            Current SSH keys in project: [u'zachstamegna:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDegf5iVAACiG1u/gxJl3sQL5eUB2j8im1WAg+/WKhNMeHAxfkeJ9cm28Z5MjM8SHHOemcMWMIymFSO9wTfKW7a5orHLYp1Jt7D+zYPleoKAUM+VZlMBoWW/zAiNbcTBvKV4REMT8d6nFlCln33wNlBT3dp7Q+1++u9YLMjTvlW1FxsJn5ju/be2iEr43VLxSGdL2UWkuzRyj3VVfAkhP+thXXCrtk9T6b12rjluyVaKj9QFzNbwFKhWZ5txS7CNTvzP5pk6qwNUFvPXtR7VAbaC9yWANkO6P4ZOxYZhLYGFOBrU7lUZc/Zq4Km3bw4ED9GR/8v6a1u7yOgc/uaIDqIMTqPrHNsJKr9njUyxyj0iU2sNhxVoJs/gJNDCan6etlkGqdNAPFjCIjR+Bb/tbmaBzIfyGN4T1eU5n+gIH+U9zOc3ukU2uKA+9TcnV4YhWHBQ6zHZc0ewovpqf4sepi0OHpychURhEioZkEkzQAeYknsnRSWMMhta9bzCsFr2ps= zachstamegna@Zachs-MacBook-Pro.local']
+2021-11-18 20:39:39,906 DEBUG    root            Running command [/usr/bin/ssh -t -i /Users/zachstamegna/.ssh/google_compute_engine -o CheckHostIP=no -o HashKnownHosts=no -o HostKeyAlias=compute.8502576802948727585 -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/Users/zachstamegna/.ssh/google_compute_known_hosts zachstamegna@34.125.37.9 -L 6688:localhost:6688].
+2021-11-18 20:39:39,906 DEBUG    root            Executing command: [u'/usr/bin/ssh', u'-t', u'-i', u'/Users/zachstamegna/.ssh/google_compute_engine', u'-o', u'CheckHostIP=no', u'-o', u'HashKnownHosts=no', u'-o', u'HostKeyAlias=compute.8502576802948727585', u'-o', u'IdentitiesOnly=yes', u'-o', u'StrictHostKeyChecking=yes', u'-o', u'UserKnownHostsFile=/Users/zachstamegna/.ssh/google_compute_known_hosts', u'zachstamegna@34.125.37.9', u'-L', u'6688:localhost:6688']
+2021-11-18 22:37:04,941 DEBUG    root            (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+Traceback (most recent call last):
+  File "/Users/zachstamegna/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/zachstamegna/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/zachstamegna/google-cloud-sdk/lib/surface/compute/ssh.py", line 393, in Run
+    raise e
+CommandError: [/usr/bin/ssh] exited with return code [255].
+2021-11-18 22:37:04,956 ERROR    root            (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].

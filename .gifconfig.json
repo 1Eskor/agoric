@@ -1,0 +1,14 @@
+{
+    "user": {
+        "id": 37,
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjozNywiZW1haWwiOiJ6YWNoc3RhbWVnbmFAZ21haWwuY29tIn0sImV4cCI6MTYzMzE3ODI2NiwiaWF0IjoxNjMzMTU2NjY2fQ.RvRJuTdIqfwmN3bTtzEMcqjdYGMDOno9qaVy2HWZutE"
+    },
+    "products": {
+        "tutorial": {
+            "id": 31,
+            "amqpLogin": "tutorial",
+            "amqpPassword": "yXM0WW4JreYhuMuz5En2UWC5"
+        }
+    },
+    "current": "tutorial"
+}

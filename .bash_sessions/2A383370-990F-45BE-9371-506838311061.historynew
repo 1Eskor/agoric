@@ -1,0 +1,19 @@
+echo $MNEOMIC
+export STEVE="booy"
+echo STEVE
+echo $STEVE
+cd ~
+ls
+ls -la
+open -a "Visual /Studio /Code" .bach_profile
+open -a "Visual /Studio /Code" .bash_profile
+open -a Visual\ Studio\ Code .bash_profile
+pwd
+touch .bash_profile
+cp .bash_profile .bash_profile_BACKUP
+echo mneomic 
+echo mnemonic
+echo $mnemonic
+echo mnemonic
+echo $mnemonic
+$echo mnemonic

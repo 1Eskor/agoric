@@ -1,0 +1,66 @@
+2021-11-14 23:35:59,603 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute']
+2021-11-14 23:36:00,027 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'ssh']
+2021-11-14 23:36:00,033 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--project: "high-comfort-332206", --zone: "us-west4-b", [USER@]INSTANCE: "chainlink-kovan"]
+2021-11-14 23:36:00,234 WARNING  root            The public SSH key file for gcloud does not exist.
+2021-11-14 23:36:00,234 WARNING  root            The private SSH key file for gcloud does not exist.
+2021-11-14 23:36:00,234 WARNING  root            You do not have an SSH key for gcloud.
+2021-11-14 23:36:00,235 WARNING  root            SSH keygen will be executed to generate a key.
+2021-11-14 23:36:19,110 DEBUG    root            Running command [/usr/bin/ssh-keygen -t rsa -f /Users/zachstamegna/.ssh/google_compute_engine].
+2021-11-14 23:36:19,110 DEBUG    root            Executing command: [u'/usr/bin/ssh-keygen', u'-t', u'rsa', u'-f', u'/Users/zachstamegna/.ssh/google_compute_engine']
+2021-11-14 23:36:40,743 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2021-11-14 23:36:41,153 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-11-14 23:36:41,375 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-11-14 23:36:41,435 DEBUG    root            OS Login Enabled: None
+Security Keys Enabled: False
+Username: zachstamegna
+SSH Security Key Support: None
+Environment: None
+Security Keys:
+
+
+2021-11-14 23:36:41,436 DEBUG    root            SSH Known Hosts File [/Users/zachstamegna/.ssh/google_compute_known_hosts] could not be opened: Unable to read file [/Users/zachstamegna/.ssh/google_compute_known_hosts]: [Errno 2] No such file or directory: '/Users/zachstamegna/.ssh/google_compute_known_hosts'
+2021-11-14 23:36:41,436 DEBUG    root            Current SSH keys in project: []
+2021-11-14 23:36:41,437 INFO     ___FILE_ONLY___ Updating project ssh metadata...
+2021-11-14 23:36:42,230 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-11-14 23:36:42,235 DEBUG    root            Operations to inspect: [<Operation
+ id: 7252301940363604198
+ insertTime: u'2021-11-14T23:36:41.852-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1636961801468-5d0cedeaffa2b-64648b70-de34427b'
+ operationType: u'compute.projects.setCommonInstanceMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/high-comfort-332206/global/operations/operation-1636961801468-5d0cedeaffa2b-64648b70-de34427b'
+ startTime: u'2021-11-14T23:36:41.856-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 242634250529
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/high-comfort-332206'
+ user: u'zachstamegna@gmail.com'
+ warnings: []>]
+2021-11-14 23:36:53,097 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-11-14 23:36:53,099 DEBUG    root            Operations to inspect: [<Operation
+ endTime: u'2021-11-14T23:36:52.815-08:00'
+ id: 7252301940363604198
+ insertTime: u'2021-11-14T23:36:41.852-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1636961801468-5d0cedeaffa2b-64648b70-de34427b'
+ operationType: u'compute.projects.setCommonInstanceMetadata'
+ progress: 100
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/high-comfort-332206/global/operations/operation-1636961801468-5d0cedeaffa2b-64648b70-de34427b'
+ startTime: u'2021-11-14T23:36:41.856-08:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 242634250529
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/high-comfort-332206'
+ user: u'zachstamegna@gmail.com'
+ warnings: []>]
+2021-11-14 23:36:53,100 INFO     ___FILE_ONLY___ Updated [https://www.googleapis.com/compute/v1/projects/high-comfort-332206].
+
+2021-11-14 23:36:53,331 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2021-11-14 23:36:53,377 INFO     ___FILE_ONLY___ Waiting for SSH key to propagate.
+
+2021-11-14 23:36:53,378 DEBUG    root            Running command [/usr/bin/ssh -T -i /Users/zachstamegna/.ssh/google_compute_engine -o CheckHostIP=no -o HashKnownHosts=no -o HostKeyAlias=compute.8502576802948727585 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/Users/zachstamegna/.ssh/google_compute_known_hosts zachstamegna@34.125.37.9 -- true].
+2021-11-14 23:36:53,378 DEBUG    root            Executing command: [u'/usr/bin/ssh', u'-T', u'-i', u'/Users/zachstamegna/.ssh/google_compute_engine', u'-o', u'CheckHostIP=no', u'-o', u'HashKnownHosts=no', u'-o', u'HostKeyAlias=compute.8502576802948727585', u'-o', u'IdentitiesOnly=yes', u'-o', u'StrictHostKeyChecking=no', u'-o', u'UserKnownHostsFile=/Users/zachstamegna/.ssh/google_compute_known_hosts', u'zachstamegna@34.125.37.9', u'--', u'true']
+2021-11-14 23:37:43,459 DEBUG    root            Running command [/usr/bin/ssh -T -i /Users/zachstamegna/.ssh/google_compute_engine -o CheckHostIP=no -o HashKnownHosts=no -o HostKeyAlias=compute.8502576802948727585 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/Users/zachstamegna/.ssh/google_compute_known_hosts zachstamegna@34.125.37.9 -- true].
+2021-11-14 23:37:43,461 DEBUG    root            Executing command: [u'/usr/bin/ssh', u'-T', u'-i', u'/Users/zachstamegna/.ssh/google_compute_engine', u'-o', u'CheckHostIP=no', u'-o', u'HashKnownHosts=no', u'-o', u'HostKeyAlias=compute.8502576802948727585', u'-o', u'IdentitiesOnly=yes', u'-o', u'StrictHostKeyChecking=no', u'-o', u'UserKnownHostsFile=/Users/zachstamegna/.ssh/google_compute_known_hosts', u'zachstamegna@34.125.37.9', u'--', u'true']
+2021-11-14 23:37:53,357 DEBUG    root            Running command [/usr/bin/ssh -t -i /Users/zachstamegna/.ssh/google_compute_engine -o CheckHostIP=no -o HashKnownHosts=no -o HostKeyAlias=compute.8502576802948727585 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/Users/zachstamegna/.ssh/google_compute_known_hosts zachstamegna@34.125.37.9 -L 6688:localhost:6688].
+2021-11-14 23:37:53,357 DEBUG    root            Executing command: [u'/usr/bin/ssh', u'-t', u'-i', u'/Users/zachstamegna/.ssh/google_compute_engine', u'-o', u'CheckHostIP=no', u'-o', u'HashKnownHosts=no', u'-o', u'HostKeyAlias=compute.8502576802948727585', u'-o', u'IdentitiesOnly=yes', u'-o', u'StrictHostKeyChecking=no', u'-o', u'UserKnownHostsFile=/Users/zachstamegna/.ssh/google_compute_known_hosts', u'zachstamegna@34.125.37.9', u'-L', u'6688:localhost:6688']
+2021-11-14 23:42:39,135 INFO     root            Display format: "default"

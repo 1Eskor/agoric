@@ -1,0 +1,8 @@
+   323.5ms (setup:715): 2021-07-28 21:17:18
+   323.6ms (setup:716): /Users/zachstamegna/Library/Python/3.8/lib/python/site-packages/pipx/__main__.py ensurepath
+   323.7ms (setup:717): pipx version is 0.16.3
+   323.7ms (setup:718): Default python interpreter is '/Library/Developer/CommandLineTools/usr/bin/python3'
+   323.8ms (mkdir:56): creating directory /Users/zachstamegna/.local/pipx/venvs
+   323.9ms (mkdir:56): creating directory /Users/zachstamegna/.local/bin
+   324.0ms (mkdir:56): creating directory /Users/zachstamegna/.local/pipx/.cache
+   496.4ms (cli:776): pipx finished.

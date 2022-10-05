@@ -1,0 +1,8 @@
+[core]
+account = zachstamegna@gmail.com
+project = high-comfort-332206
+
+[compute]
+zone = us-central1-f
+region = us-central1
+

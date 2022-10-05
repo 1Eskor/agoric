@@ -1,0 +1,52 @@
+   202.2ms (setup:715): 2021-07-28 21:17:53
+   202.3ms (setup:716): /Users/zachstamegna/Library/Python/3.8/bin/pipx install eth-brownie
+   202.4ms (setup:717): pipx version is 0.16.3
+   202.4ms (setup:718): Default python interpreter is '/Library/Developer/CommandLineTools/usr/bin/python3'
+   202.8ms (package_name_from_spec:323): Determined package name: eth-brownie
+   202.9ms (package_name_from_spec:324): Package name determined in 0.0s
+   203.3ms (run_subprocess:135): running /Library/Developer/CommandLineTools/usr/bin/python3 -m venv --without-pip /Users/zachstamegna/.local/pipx/venvs/eth-brownie
+   272.6ms (run_subprocess:148): stdout:
+   272.7ms (run_subprocess:150): stderr:
+   272.8ms (run_subprocess:151): returncode: 0
+   273.8ms (run_subprocess:135): running /Library/Developer/CommandLineTools/usr/bin/python3 -m venv --clear /Users/zachstamegna/.local/pipx/shared
+  3482.5ms (run_subprocess:148): stdout:
+  3482.7ms (run_subprocess:150): stderr:
+  3482.8ms (run_subprocess:151): returncode: 0
+  3483.3ms (upgrade:91): Upgrading shared libraries in /Users/zachstamegna/.local/pipx/shared
+  3483.7ms (run_subprocess:135): running /Users/zachstamegna/.local/pipx/shared/bin/python -m pip --disable-pip-version-check install --force-reinstall -q --upgrade pip setuptools wheel
+  7405.2ms (run_subprocess:148): stdout:
+  7405.4ms (run_subprocess:150): stderr:
+  7405.5ms (run_subprocess:151): returncode: 0
+  7405.9ms (run_subprocess:135): running /Users/zachstamegna/.local/pipx/venvs/eth-brownie/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+  7439.0ms (run_subprocess:148): stdout: /Users/zachstamegna/.local/pipx/venvs/eth-brownie/lib/python3.8/site-packages
+  7439.2ms (run_subprocess:151): returncode: 0
+  7439.6ms (run_subprocess:135): running /Users/zachstamegna/.local/pipx/shared/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+  7469.7ms (run_subprocess:148): stdout: /Users/zachstamegna/.local/pipx/shared/lib/python3.8/site-packages
+  7469.9ms (run_subprocess:151): returncode: 0
+  7470.6ms (run_subprocess:135): running /Users/zachstamegna/.local/pipx/venvs/eth-brownie/bin/python --version
+  7477.2ms (run_subprocess:148): stdout: Python 3.8.2
+  7477.4ms (run_subprocess:150): stderr:
+  7477.4ms (run_subprocess:151): returncode: 0
+  7478.6ms (_parsed_package_to_package_or_url:128): cleaned package spec: eth-brownie
+  7479.1ms (run_subprocess:135): running /Users/zachstamegna/.local/pipx/venvs/eth-brownie/bin/python -m pip install eth-brownie
+ 41424.0ms (run_subprocess:151): returncode: 1
+ 41425.5ms (subprocess_post_check_handle_pip_error:297): '/Users/zachstamegna/.local/pipx/venvs/eth-brownie/bin/python -m pip install eth-brownie' failed
+ 41427.4ms (subprocess_post_check_handle_pip_error:314): Fatal error from pip prevented installation. Full pip output in file:
+    /Users/zachstamegna/.local/pipx/logs/cmd_2021-07-28_21.17.53_pip_errors.log
+ 41438.5ms (analyze_pip_output:260): pip failed to build packages:
+    bitarray
+    cytoolz
+    lru-dict
+ 41439.2ms (rmdir:43): removing directory /Users/zachstamegna/.local/pipx/venvs/eth-brownie
+ 41452.9ms (cli:768): PipxError: Error installing eth-brownie.
+Traceback (most recent call last):
+  File "/Users/zachstamegna/Library/Python/3.8/lib/python/site-packages/pipx/main.py", line 765, in cli
+    return run_pipx_command(parsed_pipx_args)
+  File "/Users/zachstamegna/Library/Python/3.8/lib/python/site-packages/pipx/main.py", line 193, in run_pipx_command
+    return commands.install(
+  File "/Users/zachstamegna/Library/Python/3.8/lib/python/site-packages/pipx/commands/install.py", line 60, in install
+    venv.install_package(
+  File "/Users/zachstamegna/Library/Python/3.8/lib/python/site-packages/pipx/venv.py", line 240, in install_package
+    raise PipxError(
+pipx.util.PipxError: Error installing eth-brownie.
+ 41466.3ms (cli:776): pipx finished.
